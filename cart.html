@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+</head>
+<body>
+    <h1>Корзина</h1>
+    <table>
+        <tr>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Кол-во</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Шампуры</td>
+            <td class="price">50</td>
+            <td class="quantity">0</td>
+            <td><button class="plus-button">+</button></td>
+            <td><button class="minus-button">-</button></td>
+        </tr>
+        <tr>
+            <td>Мангал</td>
+            <td class="price">250</td>
+            <td class="quantity">0</td>
+            <td><button class="plus-button">+</button></td>
+            <td><button class="minus-button">-</button></td>
+        </tr>
+        <tr>
+            <td>Коптилка</td>
+            <td class="price">450</td>
+            <td class="quantity">0</td>
+            <td><button class="plus-button">+</button></td>
+            <td><button class="minus-button">-</button></td>
+        </tr>
+        <tr>
+            <td>Подсвечник</td>
+            <td class="price">500</td>
+            <td class="quantity">0</td>
+            <td><button class="plus-button">+</button></td>
+            <td><button class="minus-button">-</button></td>
+        </tr>
+        <tr>
+            <td>Урна</td>
+            <td class="price">825</td>
+            <td class="quantity">0</td>
+            <td><button class="plus-button">+</button></td>
+            <td><button class="minus-button">-</button></td>
+        </tr>
+        <tr>
+            <td>Двойные шампуры</td>
+            <td class="price">100</td>
+            <td class="quantity">0</td>
+            <td><button class="plus-button">+</button></td>
+            <td><button class="minus-button">-</button></td>
+        </tr>
+        
+        <tr>
+            <td>Сумма</td>
+            <td class="price-total">650</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <form method="POST" action="https://formspree.io/f/mpzoyavo">
+        <label>Имя:
+            <input type="text" name="name" placeholder="Имя">
+        </label>
+        <label>Почта:
+            <input type="email" name="email" placeholder="email" required>
+        </label>
+        <input type="submit">
+    </form>
+
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

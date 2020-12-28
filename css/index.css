@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&display=swap");
+
+:root {
+  background-color: turquoise;
+  margin: 50px 100px 50px 100px;
+}
+
+img {
+  max-width: 200px;
+}
+body {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.logo {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: wheat;
+}
+
+.main-menu a {
+  display: block;
+  justify-content: space-around;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid transparent;
+  margin: auto;
+  width: auto;
+  height: auto;
+  background-color: khaki;
+}
+
+.main-menu a:hover {
+  border-color: blue;
+  font-weight: bold;
+}
+
+@media (min-width: 1160px) {
+  header nav {
+    display: flex;
+  }
+  header nav .main-menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+}
+
+.banner {
+  background-image: url(../img/shamp1.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+}
+
+h2 {
+  background-image: url(../img/dark-blue.jpg);
+  text-align: center;
+  height: 100px;
+  padding-top: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+}
+
+.catalog-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 690px) {
+  .catalog-block {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+  }
+}
+
+@media (min-width: 750px) {
+  .catalog-block {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .catalog-block {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+.product-card {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  background-image: url(../img/dark-blue.jpg);
+  background-size: cover;
+  text-align: center;
+  height: 450px;
+}
+
+.product-card p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 250px;
+}
+.product-card .buttons {
+  display: flex;
+}
+
+.button {
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  color: #ffffff;
+  text-align: center;
+  /* transition: color 0.7s; */
+  background-color: black;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.card-button {
+  border-color: white;
+  color: white;
+}
+
+.card-button:hover {
+  background-color: green;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  background-color: white;
+  font-size: 36px;
+}
+
+.stock-cards {
+  display: grid;
+  justify-content: space-around;
+}
+.stock-cards img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 250px;
+}
+
+@media (min-width: 690px) {
+  .stock-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    display: grid;
+    justify-content: space-around;
+  }
+  .offer-area {
+    height: 100px;
+    padding: 30px;
+    margin: 10px;
+    width: 500px;
+  }
+}
+@media (min-width: 900px) {
+  .stock-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-content: space-around;
+  }
+}
+
+.stock-card {
+  justify-content: space-around;
+  text-align: center;
+  background-image: url(../img/dark-blue.jpg);
+  background-size: cover;
+  margin: 10px;
+  padding: 5px;
+}
+.stock-card p {
+  background-color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  width: 350px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-us {
+  text-align: center;
+  background-color: white;
+  font-size: 36px;
+}
+
+.about-us-block {
+  display: flex;
+  background-image: url(../img/orange.jpg);
+}
+
+.about-us-block p {
+  text-align: center;
+  background-color: white;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 100px;
+}
+
+.all-products-button {
+  margin: auto;
+}
+
+#new-items {
+  text-align: center;
+  background-color: white;
+  font-size: 36px;
+}
+
+.news-block {
+  text-align: center;
+}
+
+.news-cards {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.new-item {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background-image: url(../img/dark-blue.jpg);
+}
+
+.new-item p {
+  background-color: white;
+}
+
+.all-products-button {
+  background-image: url(../img/orange.jpg);
+  color: #ffffff;
+  text-decoration: solid;
+  width: 300px;
+  height: 100px;
+}
+
+h5 {
+  text-align: center;
+  background-color: white;
+  font-size: 36px;
+}
+
+.why-we-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reason {
+  background-image: url(../img/orange.jpg);
+  max-width: 300px;
+  text-align: center;
+}
+.reason p {
+  background-color: white;
+}
+.reason img {
+  max-height: 200px;
+}
+
+.blog-item {
+  background-image: url(../img/dark-blue.jpg);
+  background-size: cover;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  display: flex;
+}
+
+.blog-item p {
+  background-image: url(../img/orange.jpg);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.blog-item img {
+  border: 5px solid red;
+}
+
+.offer {
+  background-image: url(../img/dark-blue.jpg);
+  text-align: center;
+  font-size: 24px;
+  height: 400px;
+}
+
+.offer p {
+  background-color: red;
+}
+
+.offer a {
+  text-decoration: none;
+  background-color: chocolate;
+}
+
+.offer-area {
+  max-width: 400px;
+}
+
+form {
+  color: yellowgreen;
+}
+
+#contacts {
+  background-color: azure;
+  text-align: center;
+}
